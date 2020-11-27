@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date</title>
+</head>
+<body>
+<script>
+    function Student(name,room,email,telephone) {
+        this.name = name;
+        this.room = room;
+        this.email = email;
+        this.telephone = telephone;
+        this.getName = function() {
+            return this.name;
+        }
+        this.getRoom = function() {
+            return this.room;
+        }
+        this.getEmail = function() {
+            return this.email;
+        }
+        this.getTelephone = function () {
+            return this.telephone;
+        }
+       this.setName = function (name) {
+            this.name = name;
+       }
+       this.setRoom = function (room) {
+            this.room = room;
+       }
+       this.setEmail = function (email) {
+            this.email = email;
+       }
+       this.telephone = function (telephone) {
+            this.telephone = telephone;
+       }
+    }
+    let thao = new Student("Dang Xuan Thao","C1020I1",
+        "dangxuanthaoht@gmail.com","081 266 1990");
+    let thinh = new Student();
+thinh.setName("LE VAN THINH");
+thinh.setRoom("C1020I1");
+document.write(thinh.getName()+"<br>"+thinh.getRoom()+"<br>");
+    document.write("Fullname :"+thao.getName()+"<br>"
+        +"Email :"+thao.getEmail());
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Rectangle (Width,Height) {
+        this.Width = Width;
+        this.Height = Height;
+
+        this.getArea = function () {
+            return this.Width * this.Height;
+        }
+        this.getPeri = function () {
+            return (this.Height + this.Width) * 2;
+        }
+        this.setWidth = function (newWidth) {
+            this.Width = newWidth;
+        }
+        this.setHeight = function (newHeight) {
+            this.Height = newHeight;
+        }
+    }
+    let rectangle = new Rectangle(20,10);
+    rectangle.setWidth(30);
+    document.write("dien tich la : "+ rectangle.getArea()+"<br>"+
+        "chu vi la : "+ rectangle.getPeri());
+
+</script>
+</body>
+</html>
